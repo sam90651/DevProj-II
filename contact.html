@@ -1,0 +1,81 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="data.json"></script>
+
+</head>
+<body>
+    
+    
+<header>
+   <h1 style="text-align:right;">PORTFOLIO:SUMIT BANSODE</h1>
+</header>
+<nav>
+  <ul>
+    <li>
+    <p>
+     <a href="About.html">AboutMe</a><br>
+     <br>
+     <a href="#">CoverLetter</a><br>
+     <br>
+    <a href="Resume.html">Resume</a><br>
+    <br>
+    <a href="#">Contact Me</a><br>
+    <br>
+    <a href="js.html">JS</a><br>
+        <br>
+        <a href="Download.html">Download</a><br>
+    <br>
+    </p>
+  </li>
+  </ul>
+</nav>
+<article>
+<form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br/>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+    
+    <label for="lname">EmailId</label>
+    <input type="text" id="email" name="EmailId" placeholder="Your EmailId.." required></br>
+    
+    <label for="lname">Message</label>
+    <input type="text" id="message" name="Message" placeholder="Your Message.." required></br>
+    
+    <label for="subject">Subject</label>
+<select id= "dropDown">
+</select>
+
+<script>
+ var jsonObj = { location: [
+        { "name": "Job Offer"},
+        { "name": "Mentoring" },
+{"name":"Lectures"}      
+    ]
+    }
+    
+    var myDDL = document.getElementById("dropDown");
+
+for (i = 0; i < jsonObj.location.length; i++) {
+    var option = document.createElement("option");
+    option.text = jsonObj.location[i].name;
+
+    option.value = jsonObj.location[i].address;
+    try {
+        myDDL.options.add(option);
+    }
+    catch (e) {
+        alert(e);
+    }
+}
+</script>
+<input type="submit" value="Submit">
+</form>
+</article>
+</body>
+<footer>
+    
+</footer>
+</html>

@@ -1,0 +1,7 @@
+ var jsonObj = { location: [
+        { "name": "Job Offer"},
+        { "name": "Mentoring" },
+{"name":"Lectures"}      
+    ]
+    }
+    
